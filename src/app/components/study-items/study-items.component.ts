@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StudyItemService } from 'src/app/services/study-item.service';
 import { StudyTypes } from 'src/app/Study-item';
-import { STUDYITEMS } from 'src/app/mock-study-items';
 
 @Component({
   selector: 'app-study-items',
@@ -8,11 +8,13 @@ import { STUDYITEMS } from 'src/app/mock-study-items';
   styleUrls: ['./study-items.component.css']
 })
 export class StudyItemsComponent implements OnInit {
-  studyItems : StudyTypes[] = STUDYITEMS
+  studyItems : StudyTypes[] = [];
 
-  constructor() { }
+  constructor(private studyItemService: StudyItemService) { }
 
   ngOnInit(): void {
+    this.studyItemService.getStudyItems().subscribe((studyItems) => this.studyItems = studyItems)
+
   }
 
 }
