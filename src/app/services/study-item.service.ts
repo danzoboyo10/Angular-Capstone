@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import {HttpClient, HttpHeaders} from '@angular/common/http' 
+import { Observable } from 'rxjs';
 import { StudyTypes } from 'src/app/Study-item';
-import { STUDYITEMS } from 'src/app/mock-study-items';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StudyItemService {
+  private jsonApiUrl = 'http://localhost:5000/studyitems'
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   getStudyItems(): Observable <StudyTypes[]> {
-    const studyItems = of(STUDYITEMS);
-    return studyItems;
+    return this.http.get<StudyTypes[]>(this.jsonApiUrl)
   }
 }

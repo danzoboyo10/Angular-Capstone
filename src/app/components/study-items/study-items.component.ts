@@ -14,7 +14,7 @@ export class StudyItemsComponent implements OnInit {
 
   ngOnInit(): void {
     this.studyItemService.getStudyItems().subscribe((studyItems) => this.studyItems = studyItems)
-
+ 
   }
 
 }
