@@ -7,31 +7,27 @@ export const STUDYITEMS: StudyTypes[] = [
     date: 'Jan 7th at 2:30pm',
     completed: false,
     timeSpent: '10 hours',
-    concentrationLevel: '7'
+    concentrationLevel: '7',
+    productivityLevel:'7'
   },
   {
-    id: 2, 
+    id: 1, 
     text: 'Study data structures and algorithms',
     date: 'Jan 7th at 2:30pm',
     completed: false,
     timeSpent: '10 hours',
-    concentrationLevel: '7'
+    concentrationLevel: '7',
+    productivityLevel:'7'
   },
   {
-    id: 3, 
+    id: 1, 
     text: 'Study data structures and algorithms',
     date: 'Jan 7th at 2:30pm',
     completed: false,
     timeSpent: '10 hours',
-    concentrationLevel: '7'
-  },
-  {
-    id: 4, 
-    text: 'Study data structures and algorithms',
-    date: 'Jan 7th at 2:30pm',
-    completed: false,
-    timeSpent: '10 hours',
-    concentrationLevel: '7'
+    concentrationLevel: '7',
+    productivityLevel:'7'
   }
+
 
 ]

@@ -1,2 +1,6 @@
-<app-study-item *ngFor="let studyItem of studyItems" [studyItem]="studyItem">
-</app-study-item>
+<app-study-item 
+*ngFor="let studyItem of studyItems" 
+[studyItem]="studyItem"
+(onDeleteStudyItem)="deleteStudyItem(studyItem)"
+(onDblClickCompleted)="doubleClickCompleted(studyItem)"
+></app-study-item>

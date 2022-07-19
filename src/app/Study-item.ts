@@ -5,4 +5,5 @@ export interface StudyTypes {
   completed: boolean;
   timeSpent: string;
   concentrationLevel: string; 
+  productivityLevel: string;
 }

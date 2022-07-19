@@ -1,8 +1,17 @@
-<div class="study-item">
-  <h3>{{ studyItem.text }} <fa-icon [ngStyle]="{'color':'red'}" 
+<div 
+  [ngClass]="{ completed: studyItem.completed }" 
+  class="study-item"
+  (doubleClick) = "onDblClick(studyItem)">
+  <h3 id="mainHeader">{{ studyItem.text.toUpperCase() }}  <fa-icon 
+    (click) = "onDelete(studyItem)"
+    [ngStyle]="{'color':'red'}" 
     [icon]="faTimes"></fa-icon></h3>
-  <p>{{ studyItem.date }}</p>
-  <p>{{ studyItem.completed }}</p>
-  <p>{{ studyItem.timeSpent }}</p>
-  <p>{{ studyItem.concentrationLevel }}</p>
+  <p class="studyFields">DATE: {{ studyItem.date }}</p>
+  <p class="studyFields">COMPLETED: {{ studyItem.completed }}</p>
+  <p class="studyFields">TIME STUDYING: {{ studyItem.timeSpent }}</p>
+  <p class="studyFields">FOCUS LEVEL(0-10): {{ studyItem.concentrationLevel }}</p>
+  <p class="studyFields">PRODUCTIVITY LEVEL(0-10): {{ studyItem.productivityLevel }}</p>
+  <p id="key">KEY: 0-10, 0 being the least focused and/or productive. 10 being the most focused and/or productive. 5 being at an average focused/productive level</p>
+  <p id="key">*PLEASE READ* Once you have completed your study item, double click the note card to signal completion and get your study item into the study session hall of frame</p>
+
 </div>

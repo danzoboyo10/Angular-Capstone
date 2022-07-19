@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kalam:wght@300&display=swap');
 header {
   display: flex;
+}
+
+#studyLogger {
+  color: white;
+  font-family: 'Fredericka the Great';
+  font-size: 50px;
+  display: inline;
+  position: relative;
+  left: 39%;
+
 }
