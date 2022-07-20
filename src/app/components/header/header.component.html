@@ -1,7 +1,7 @@
 <header>
   <h1 id = "studyLogger"> {{ title }}</h1>
-  <app-button
-  color="{{ showAddStudyItem ? 'red' : 'green' }}"
+  <app-button *ngIf="hasRoute('/')"
+  color="{{ showAddStudyItem ? 'pink' : 'teal' }}"
   text="{{ showAddStudyItem ? 'close' : 'open' }}"
   (btnClick) ="toggleStudyItem()"
   ></app-button>

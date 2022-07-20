@@ -1,6 +1,6 @@
 <form *ngIf="showAddStudyItem" (ngSubmit) = "onSubmit()">
   <div>
-    <label for="text">Study Item:</label>
+    <label class = "formText" for="text">Study Item:</label>
     <input type="text" name="text" [(ngModel)]= "text" placeholder="Add study item">
   </div>
   <div>

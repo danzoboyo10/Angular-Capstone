@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "text": "Study data structures and algorithms",
+      "text": "Make an Angular Project",
       "date": "Jan 7th at 2:30pm",
       "completed": "false",
       "timeSpent": "10 hours",
@@ -20,19 +20,12 @@
     },
     {
       "id": 3,
-      "text": "Study data structures and algorithms",
+      "text": "Make another react project",
       "date": "Jan 7th at 2:30pm",
       "completed": "false",
       "timeSpent": "10 hours",
       "focusLevel": "7",
       "productivityLevel": "8"
-    },
-    {
-      "text": "jojo",
-      "date": "vc",
-      "completed": false,
-      "timeSpent": "vc",
-      "id": 4
     }
   ]
 }
