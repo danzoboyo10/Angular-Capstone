@@ -24,10 +24,14 @@ export class StudyItemsComponent implements OnInit {
       () => (this.studyItems = this.studyItems.filter((s) => s.id !== studyItem.id)));
 
   }
-  doubleClickCompleted(studyItem : StudyTypes) {
+  doubleClickCompleted(studyItem: StudyTypes) {
     studyItem.completed = !studyItem.completed;
-    console.log(studyItem.completed)
+    this.studyItemService.updateStudyItemCompleted(studyItem).subscribe
 
+  }
+
+  addStudyItem(studyItem: StudyTypes) {
+    this.studyItemService.addStudyItem(studyItem).subscribe((studyItem) => (this.studyItems.push(studyItem)));
   }
 
 

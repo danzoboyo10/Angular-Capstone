@@ -30,4 +30,8 @@ export class StudyItemService {
     const url = `${this.jsonApiUrl}/${studyItem.id}`;
     return this.http.put<StudyTypes>(url, studyItem, httpChoices)
   }
+  addStudyItem(studyItem : StudyTypes):Observable<StudyTypes> {
+    return this.http.post<StudyTypes>(this.jsonApiUrl, studyItem, httpChoices);
+
+  }
 }
