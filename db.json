@@ -19,13 +19,13 @@
       "productivityLevel": "8"
     },
     {
-      "id": 3,
-      "text": "Make another react project",
-      "date": "Jan 7th at 2:30pm",
-      "completed": "false",
-      "timeSpent": "10 hours",
-      "focusLevel": "7",
-      "productivityLevel": "8"
+      "text": "study alggss",
+      "date": "jul 29th ",
+      "completed": false,
+      "timeSpent": "0",
+      "focusLevel": "0",
+      "productivityLevel": "0",
+      "id": 3
     }
   ]
 }

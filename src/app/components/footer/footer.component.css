@@ -8,3 +8,8 @@
   bottom: 50%;
 
 }
+#aboutLink {
+  font-size: 20px;
+  position: relative;
+  left: 7%;
+}

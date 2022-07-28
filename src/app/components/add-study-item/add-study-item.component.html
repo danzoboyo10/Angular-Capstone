@@ -1,26 +1,26 @@
-<form *ngIf="showAddStudyItem" (ngSubmit) = "onSubmit()">
+<form class = "studyForm" *ngIf="showAddStudyItem" (ngSubmit) = "onSubmit()">
   <div>
     <label class = "formText" for="text">Study Item:</label>
     <input type="text" name="text" [(ngModel)]= "text" placeholder="Add study item">
   </div>
   <div>
-    <label for="date">Date:</label>
+    <label class = "formText" for="date">Date:</label>
     <input type="text" name="date" [(ngModel)]= "date"placeholder="Add study time and day">
   </div>
   <div>
-    <label for="completed">Completed:</label>
+    <label class = "formText" for="completed">Completed:</label>
     <input type="checkbox" name="completed" [(ngModel)]= "completed">
   </div>
   <div>
-    <label for="timeSpent">Time Studying:</label>
+    <label class = "formText" for="timeSpent">Time Studying:</label>
     <input type="text" name="timeSpent" [(ngModel)]= "timeSpent" placeholder="Add time studying">
   </div>
   <div>
-    <label for="focusLevel">Focus Level:</label>
+    <label class = "formText" for="focusLevel">Focus Level:</label>
     <input type="text" name="focusLevel" [(ngModel)]= "focusLevel" placeholder="Enter a value 0-10">
   </div>
   <div>
-    <label for="productivityLevel">Productivity Level:</label>
+    <label class = "formText" for="productivityLevel">Productivity Level:</label>
     <input type="text" name="productivityLevel" [(ngModel)]= "productivityLevel" placeholder="Enter a value 0-10">
   </div>
   {{ text }}
