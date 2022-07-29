@@ -1,6 +1,6 @@
 <header>
   <h1 id = "studyLogger"> {{ title }}</h1>
-  <app-button class = "btn" *ngIf="hasRoute('/')"
+  <app-button class = "btnHeader" *ngIf="hasRoute('/')"
   color="{{ showAddStudyItem ? 'red' : 'green' }}"
   text="{{ showAddStudyItem ? 'CLOSE STUDY FORM' : 'OPEN STUDY FORM' }}"
   (btnClick) ="toggleStudyItem()"

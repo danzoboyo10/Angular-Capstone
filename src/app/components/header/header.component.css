@@ -14,12 +14,12 @@ header {
 
 }
 
-.btn {
+.btnHeader {
   position: relative;
   left: 400px;
   top: 125px;
-  border: none;
   text-decoration: none;
 
 }
+
 

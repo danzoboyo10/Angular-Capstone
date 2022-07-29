@@ -1,9 +1,21 @@
 .about {
   color: black;
   font-family: 'Fredericka the Great';
-  font-size: 30px;
+  font-size: 50px;
   display: inline;
   position: relative;
-  left: 39%;
+  left: 38.5%;
+}
+#goBack {
+  position: relative;
+  left: 6.5%;
+}
 
+h4 {
+  position: relative;
+  left: 2%;
+}
+h5 {
+  position: relative;
+  right: 3%;
 }
