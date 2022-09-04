@@ -1,27 +1,30 @@
-# AngularCapstone
+## Study Logger
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+## Introduction: 
+Study Logger is an Angular focused web application that allows you to create, read, and delete study items. This application allows users to indicate whether or not they have completed their study items along with other important information related to each study item such as date of study session, time studying, focus level, and productivity level.
 
-## Development server
+## Technologies Used 
+* Angular
+* Fontawesome 
+* JavaScript 
+* TypeScript
+* JSON server
+---
+## Screenshots
+![Screen Shot 2022-09-04 at 6 54 38 PM](https://user-images.githubusercontent.com/101149907/188336598-14b12c85-a681-47f0-8c56-2ed606214ab0.png)
+![Screen Shot 2022-09-04 at 6 54 59 PM](https://user-images.githubusercontent.com/101149907/188336601-fc2b0380-39d0-4957-bd2a-0a5f8c333bc4.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Getting Started 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Click <a href ="https://www.youtube.com/watch?v=mobPw5ysriQ" target="_blank"/> here </a> to see the deployed app!
 
-## Build
+## Unsolved Problems
+* Update functionality when double clicking a study item
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Future Enhancements
+- Debug update functionality so that when double clicking a study item the boarder becomes framed (when the study item has been completed)
+- Improve styling
+- Turn it into a full stack application by using a backend such as MongoDB
+- Expand the Study-item.ts interface to include more attributes for each study item such as a timer
